@@ -2,7 +2,7 @@
 function calendar_book($attr) {
     $args = shortcode_atts( array(
      
-            'room' => 'https://hotelarmerun.book.rentl.io/?',
+            'room' => 'https://palacedivnic.book.rentl.io?',
             'lang2' => 'hr',
             'lang' => 'hr-HR'
  
