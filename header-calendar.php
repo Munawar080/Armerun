@@ -1,12 +1,15 @@
-
 function calendar_book($attr) {
     $args = shortcode_atts( array(
      
-            'room' => 'https://palacedivnic.book.rentl.io?',
+            'room' => 'https://hotelarmerun.book.rentl.io/?',
             'lang2' => 'hr',
             'lang' => 'hr-HR'
  
         ), $attr );
+			if ( is_page('palace-divnic') ) {   
+				$args['room'] = 'https://palacedivnic.book.rentl.io/?'; 
+			}
+
 	if ($args['lang2'] === 'hr') {
 $osobe = "Osoba:";
 $djeca = "Djece:";
